@@ -61,11 +61,11 @@ function currentRoute(){
 }
 
 window.addEventListener("hashchange", render);
-window.addEventListener("DOMContentLoaded", ()=>{ render(); initChat(); });
+window.addEventListener("DOMContentLoaded", ()=>{ render(); initChat(); initNav(); });
 
 function render(){
   const route = currentRoute();
-  document.querySelectorAll(".primary-doc-nav a, .secondary-nav a").forEach(a=>{
+  document.querySelectorAll(".primary-doc-nav a, .sidebar-nav a").forEach(a=>{
     a.classList.toggle("active", a.dataset.route === route);
   });
   const app = document.getElementById("app");
@@ -534,6 +534,23 @@ function renderDashboard(){
 function wireDashboard(){
   const btn = document.getElementById("resetBtn");
   if(btn) btn.addEventListener("click", resetProgress);
+}
+
+// ---------- SIDEBAR NAV ----------
+
+function initNav(){
+  const btn = document.getElementById("navMenuBtn");
+  const overlay = document.getElementById("navOverlay");
+  const sidebar = document.getElementById("sidebarNav");
+  const closeBtn = document.getElementById("sidebarClose");
+
+  const openNav = ()=>{ sidebar.classList.add("open"); overlay.classList.add("open"); document.body.classList.add("nav-open"); };
+  const closeNav = ()=>{ sidebar.classList.remove("open"); overlay.classList.remove("open"); document.body.classList.remove("nav-open"); };
+
+  btn.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
+  overlay.addEventListener("click", closeNav);
+  sidebar.querySelectorAll("a").forEach(a => a.addEventListener("click", closeNav));
 }
 
 // ---------- TUTOR CHAT ----------

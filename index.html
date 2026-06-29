@@ -36,20 +36,36 @@
       <a href="#/billofrights" data-route="billofrights">Bill of Rights</a>
     </div>
   </div>
-  <div class="masthead-subnav">
-    <nav class="secondary-nav" id="secondaryNav">
-      <a href="#/context-debate" data-route="context-debate">Context &amp; Debate</a>
-      <span class="nav-divider" aria-hidden="true"></span>
-      <a href="#/people" data-route="people">Key People</a>
-      <span class="nav-divider" aria-hidden="true"></span>
-      <a href="#/today" data-route="today">In the Courts</a>
-      <span class="nav-divider" aria-hidden="true"></span>
-      <a href="#/sort" data-route="sort">Sort It Out</a>
-      <span class="nav-divider" aria-hidden="true"></span>
-      <a href="#/dashboard" data-route="dashboard" class="nav-progress">Your Record</a>
-    </nav>
-  </div>
 </header>
+
+<button class="nav-menu-btn" id="navMenuBtn" aria-label="Open navigation">☰</button>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="sidebar-nav" id="sidebarNav" aria-label="Site navigation">
+  <button class="sidebar-close" id="sidebarClose" aria-label="Close navigation">×</button>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">The Documents</div>
+    <a href="#/declaration" data-route="declaration">Declaration of Independence</a>
+    <a href="#/constitution" data-route="constitution">Constitution</a>
+    <a href="#/billofrights" data-route="billofrights">Bill of Rights</a>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Context &amp; Debate</div>
+    <a href="#/federalist" data-route="federalist">Federalist Papers</a>
+    <a href="#/antifederalist" data-route="antifederalist">Anti-Federalist Papers</a>
+    <a href="#/articles" data-route="articles">Articles of Confederation</a>
+    <a href="#/northwestordinance" data-route="northwestordinance">Northwest Ordinance</a>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-heading">Tools</div>
+    <a href="#/people" data-route="people">Key People</a>
+    <a href="#/today" data-route="today">In the Courts</a>
+    <a href="#/sort" data-route="sort">Sort It Out</a>
+  </div>
+  <div class="sidebar-section">
+    <a href="#/dashboard" data-route="dashboard">Your Record</a>
+  </div>
+</nav>
 
 <main id="app"></main>
 
