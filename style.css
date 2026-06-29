@@ -371,6 +371,7 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
 .secondary-nav a:hover{color:var(--ink); text-decoration:none; border-color:var(--brass); opacity:1;}
 .secondary-nav a.active{color:var(--seal); border-color:var(--seal); opacity:1;}
 .secondary-nav a.nav-progress{color:var(--navy); font-weight:500;}
+.nav-divider{width:1px; background:rgba(28,27,25,0.22); align-self:stretch; margin:0 4px; flex-shrink:0;}
 
 /* ---------- Quick-links (tools & reference) ---------- */
 .quick-links{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:14px;}
