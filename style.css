@@ -47,8 +47,8 @@ a:hover{text-decoration:underline;}
 }
 .wordmark{display:flex; flex-direction:column; line-height:1.05;}
 .wordmark-eyebrow{
-  font-family:var(--mono); font-size:10.5px; letter-spacing:0.18em; text-transform:uppercase;
-  color:var(--ink-soft);
+  font-family:var(--display); font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--ink-soft); font-weight:500;
 }
 .wordmark-main{
   font-family:var(--display); font-weight:600; font-size:26px; color:var(--ink);
@@ -71,7 +71,7 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
   padding:24px 0 56px; border-bottom:1px solid var(--line); margin-bottom:48px;
 }
 @media (max-width:760px){ .hero{grid-template-columns:1fr;} }
-.hero-eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--seal);}
+.hero-eyebrow{font-family:var(--display); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--seal); font-weight:500;}
 .hero h1{
   font-family:var(--display); font-size:38px; line-height:1.15; margin:10px 0 18px; font-weight:700;
 }
@@ -90,7 +90,7 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
   content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--brass);
 }
 .card:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(28,27,25,0.10);}
-.card .card-year{font-family:var(--mono); font-size:11px; color:var(--seal); letter-spacing:.08em;}
+.card .card-year{font-family:var(--display); font-size:12px; color:var(--seal); letter-spacing:.08em; font-weight:500;}
 .card h3{font-family:var(--display); font-size:24px; margin:6px 0 8px;}
 .card p{font-size:14.5px; color:var(--ink-soft); margin:0 0 14px;}
 .card .progress-pill{
