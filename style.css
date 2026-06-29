@@ -127,6 +127,8 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
 .key-elements .el.is-open .desc{display:block;}
 .reveal-text{font-family:var(--body); font-size:16px; line-height:1.65; color:var(--ink); border-left:2px solid var(--brass); padding:10px 14px; margin:10px 0 4px; max-height:320px; overflow-y:auto; display:none;}
 .key-elements .el.is-open .reveal-text{display:block;}
+.source-link{display:inline-block; margin-top:18px; font-family:var(--mono); font-size:11px; letter-spacing:.04em; text-transform:uppercase; color:var(--navy); border-bottom:1px solid var(--navy); padding-bottom:1px;}
+.source-link:hover{color:var(--seal); border-color:var(--seal); text-decoration:none;}
 
 .phrase-block{
   border-left:3px solid var(--seal); background:rgba(140,47,57,0.05);

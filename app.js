@@ -70,6 +70,7 @@ function render(){
   });
   const app = document.getElementById("app");
   if(route === "home") app.innerHTML = renderHome();
+  else if(route === "context-debate"){ app.innerHTML = renderHome(); setTimeout(()=>{ document.getElementById("context-debate")?.scrollIntoView({behavior:"smooth"}); }, 60); }
   else if(DOCS[route]) app.innerHTML = renderDoc(route);
   else if(route === "today") app.innerHTML = renderToday();
   else if(route === "people") app.innerHTML = renderPeople();
@@ -129,7 +130,7 @@ function renderHome(){
     </a>
   </section>
 
-  <section class="section-block" style="margin-top:56px;">
+  <section class="section-block" id="context-debate" style="margin-top:56px; scroll-margin-top:140px;">
     <h2>Context & debate</h2>
     <p style="margin-top:-6px; color:var(--ink-soft);">Not founding law — but the surrounding argument and the failed first attempt that explain why the core three look the way they do.</p>
     <div class="doc-cards" style="grid-template-columns:repeat(2,1fr);">
@@ -173,7 +174,7 @@ function renderHome(){
         <div class="ql-desc">A tap-to-match game mixing facts from all seven documents — to test whether you can tell them apart.</div>
       </a>
       <a class="quick-link-card" href="#/today">
-        <div class="ql-title">Still in Force</div>
+        <div class="ql-title">In the Courts</div>
         <div class="ql-desc">Which amendments are actually argued in court and the news today, and which are historical footnotes.</div>
       </a>
     </div>
@@ -233,6 +234,7 @@ function renderSection(docKey, s, si){
         </div>
       </div>
     `).join("") + `</div>`;
+    if(s.sourceUrl) bodyHTML += `<a class="source-link" href="${s.sourceUrl}" target="_blank" rel="noopener noreferrer">Read the complete original text →</a>`;
   }
 
   if(s.phrases){
@@ -383,7 +385,7 @@ function renderToday(){
   return `
   <div class="doc-header">
     <div class="eyebrow">Beyond memorization</div>
-    <h1>Still in Force</h1>
+    <h1>In the Courts</h1>
     <p class="subtitle">Of the 27 amendments, a handful do almost all the work in today's courts, headlines, and arguments. Here's which ones, and why.</p>
   </div>
   <div class="amend-grid">${cards}</div>

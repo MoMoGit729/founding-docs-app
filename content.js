@@ -30,6 +30,7 @@ declaration: {
       id:"structure",
       heading:"Key structure",
       intro:"Tap each part to see what's actually in it.",
+      sourceUrl:"https://www.archives.gov/founding-docs/declaration-transcript",
       reveal:[
         {label:"The Preamble", desc:"States the purpose: when a people must explain to the world why they're separating from another government.", text:"When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."},
         {label:"The Statement of Principles", desc:"The philosophical core — natural rights, consent of the governed, and the right to alter or abolish unjust government.", text:"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, — That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government..."},
@@ -108,6 +109,7 @@ constitution: {
       id:"structure",
       heading:"Key structure",
       intro:"Tap each article to see what it covers.",
+      sourceUrl:"https://www.archives.gov/founding-docs/constitution-transcript",
       reveal:[
         {label:"The Preamble", desc:"\"We the People...\" — one sentence stating the document's purpose. Not legally operative itself, but sets the frame: the government's authority comes from the people, not the states or a monarch.", text:"We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."},
         {label:"Article I — The Legislature", desc:"Creates Congress (House + Senate), and is the longest article — lists Congress's enumerated powers in Section 8 (the power to tax, declare war, regulate commerce, etc.).", text:"All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives. — Article I, Section 1 (Section 8 then lists specific powers: to lay and collect taxes, regulate commerce, declare war, raise armies, and more.)"},
@@ -189,6 +191,7 @@ billofrights: {
       id:"structure",
       heading:"Key structure",
       intro:"Tap each amendment to see what it covers.",
+      sourceUrl:"https://www.archives.gov/founding-docs/bill-of-rights-transcript",
       reveal:[
         {label:"1st Amendment", desc:"Speech, religion (establishment + free exercise), press, assembly, petition.", text:"Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances."},
         {label:"2nd Amendment", desc:"Right to keep and bear arms.", text:"A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed."},
@@ -329,6 +332,7 @@ DOCS.federalist = {
       id:"structure",
       heading:"The three essays that matter most",
       intro:"Tap each to see its core argument.",
+      sourceUrl:"https://avalon.law.yale.edu/subject_menus/fed.asp",
       reveal:[
         {label:"No. 10 (Madison)", desc:"Argues a large republic controls the danger of 'factions' (interest groups) better than a small one — the opposite of what most political theory at the time assumed.", text:"Extend the sphere, and you take in a greater variety of parties and interests; you make it less probable that a majority of the whole will have a common motive to invade the rights of other citizens... The influence of factious leaders may kindle a flame within their particular States, but will be unable to spread a general conflagration through the other States. — Federalist No. 10"},
         {label:"No. 51 (Madison)", desc:"The actual logic behind checks and balances: 'If men were angels, no government would be necessary... ambition must be made to counteract ambition.' Power is split between branches because no branch can be trusted to police itself.", text:"If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself. — Federalist No. 51"},
@@ -381,6 +385,7 @@ DOCS.antifederalist = {
       id:"structure",
       heading:"The two strands of the argument",
       intro:"Tap each to see its core worry.",
+      sourceUrl:"https://avalon.law.yale.edu/subject_menus/antifed.asp",
       reveal:[
         {label:"\"Brutus\" essays", desc:"Most concerned with the federal judiciary — warned that federal courts, once created, would keep expanding their own power with little check on them. A concern still raised today about judicial power.", text:"The judicial power of the United States is to be vested in a supreme court, and in such inferior courts as Congress may from time to time ordain and establish... These courts will have authority to decide upon the validity of the laws of any of the states, in all cases where they come in question before them... The general legislature might... by judicial decisions, undermine all the powers of the state governments. — Brutus No. 1"},
         {label:"\"Cato\" essays", desc:"Argued directly against Federalist No. 10 — that a republic this large and diverse couldn't represent its people well, and power would drift toward a small distant elite.", text:"...a very extensive territory cannot be governed on the principles of freedom, otherwise than by a confederation of republics... the representation will be so small that your members of Congress will be above the controul of the people... and the senators will be in the interest of, and assimilate to, a standing aristocracy. — Cato No. 3"},
@@ -432,6 +437,7 @@ DOCS.articles = {
       id:"structure",
       heading:"What was missing, compared to the Constitution",
       intro:"Tap each gap to see how the Constitution later fixed it.",
+      sourceUrl:"https://avalon.law.yale.edu/18th_century/artconf.asp",
       reveal:[
         {label:"No executive branch", desc:"Nobody to enforce national decisions. The Constitution's fix: Article II creates the Presidency.", text:"Each state retains its sovereignty, freedom, and independence, and every Power, Jurisdiction, and right, which is not by this confederation expressly delegated to the United States, in Congress assembled. — Articles of Confederation, Article II (all power stayed with the states; there was no president or executive to act on behalf of the whole nation)"},
         {label:"No national court system", desc:"No consistent way to resolve disputes between states. The Constitution's fix: Article III creates the Supreme Court and federal judiciary.", text:"The United States in Congress assembled shall... appoint courts for the trial of piracies and felonies committed on the high seas and establish courts for receiving and determining finally appeals in all cases of captures... — Article IX (the only judicial power granted — limited to piracy and war prizes; no general federal courts existed)"},
@@ -485,6 +491,7 @@ DOCS.northwestordinance = {
       id:"structure",
       heading:"What it actually contained",
       intro:"Tap each part to see what's in it.",
+      sourceUrl:"https://avalon.law.yale.edu/18th_century/nworder.asp",
       reveal:[
         {label:"Three-stage admission process", desc:"Territory with an appointed governor → organized territory with some self-government → full statehood once population thresholds were met.", text:"...whenever any of the said States shall have sixty thousand free inhabitants therein, such State shall be admitted, by its delegates, into the Congress of the United States, on an equal footing with the original States in all respects whatever, and shall be at liberty to form a permanent constitution and State government... — Northwest Ordinance, Article V"},
         {label:"Banned slavery in the territory", desc:"Article 6 prohibited slavery north of the Ohio River — notable because the Constitution being drafted the same year deliberately avoided directly addressing the question.", text:"There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes whereof the party shall have been duly convicted: Provided, always, That any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original States, such fugitive may be lawfully reclaimed... — Northwest Ordinance, Article VI"},
