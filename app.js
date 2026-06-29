@@ -95,21 +95,34 @@ function progressPillHTML(key){
 function renderHome(){
   return `
   <section class="hero">
-    <div>
-      <div class="hero-eyebrow">Three documents, three different jobs</div>
-      <h1>One announced independence.<br>One built the government.<br>One protects you from it.</h1>
-      <p class="lede">A short, self-paced, interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights — built to fix the specific confusion most people have: which document does what.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#/declaration">Start with the Declaration →</a>
-        <a class="btn ghost" href="#/dashboard">View your record</a>
+    <div class="hero-eyebrow">Three documents, three different jobs</div>
+    <div class="hero-slogan">
+      <div class="slogan-line">
+        <span class="slogan-year">1776</span>
+        <span class="slogan-rule" aria-hidden="true"></span>
+        <span class="slogan-text">One announced independence.</span>
+      </div>
+      <div class="slogan-line">
+        <span class="slogan-year">1787</span>
+        <span class="slogan-rule" aria-hidden="true"></span>
+        <span class="slogan-text">One built the government.</span>
+      </div>
+      <div class="slogan-line">
+        <span class="slogan-year">1791</span>
+        <span class="slogan-rule" aria-hidden="true"></span>
+        <span class="slogan-text">One protects you from it.</span>
       </div>
     </div>
-    <div class="callout">
-      <strong>The one-sentence version:</strong> the Declaration (1776) is a breakup letter explaining why; the Constitution (1787) is the government's actual operating manual; the Bill of Rights (1791) is the list of individual protections added because the operating manual didn't have one yet.
+    <p class="lede">A short, self-paced, interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights — built to fix the specific confusion most people have: which document does what.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#/declaration">Start with the Declaration →</a>
+      <a class="btn ghost" href="#/dashboard">View your record</a>
     </div>
   </section>
 
-  <section class="doc-cards">
+  <section class="section-block" style="margin-top:0;">
+    <h2>Founding Documents</h2>
+    <div class="doc-cards">
     <a class="card" href="#/declaration" style="text-decoration:none;">
       <div class="card-year">1776</div>
       <h3>Declaration of Independence</h3>
@@ -128,6 +141,7 @@ function renderHome(){
       <p>The first ten amendments — individual protections added to get the Constitution ratified.</p>
       ${progressPillHTML('billofrights')}
     </a>
+    </div>
   </section>
 
   <section class="section-block" id="context-debate" style="margin-top:56px; scroll-margin-top:140px;">

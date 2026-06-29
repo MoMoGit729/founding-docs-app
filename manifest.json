@@ -1,0 +1,17 @@
+{
+  "name": "Founding Documents — A Study",
+  "short_name": "Founding Docs",
+  "description": "An interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C1B19",
+  "theme_color": "#1C1B19",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

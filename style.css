@@ -11,6 +11,7 @@
   --display: 'Cormorant Garamond', serif;
   --body: 'Spectral', serif;
   --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
   --radius: 2px;
 }
 
@@ -69,15 +70,15 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
 
 /* Hero / Home */
 .hero{
-  display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:center;
-  padding:24px 0 56px; border-bottom:1px solid var(--line); margin-bottom:48px;
+  padding:32px 0 56px; border-bottom:1px solid var(--line); margin-bottom:48px;
 }
-@media (max-width:760px){ .hero{grid-template-columns:1fr;} }
 .hero-eyebrow{font-family:var(--display); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--seal); font-weight:500;}
-.hero h1{
-  font-family:var(--display); font-size:38px; line-height:1.15; margin:10px 0 18px; font-weight:700;
-}
-.hero p.lede{font-size:18px; color:var(--ink-soft); max-width:46ch;}
+.hero-slogan{display:grid; gap:4px; margin:14px 0 26px;}
+.slogan-line{display:grid; grid-template-columns:44px 1px 1fr; gap:0 16px; align-items:center;}
+.slogan-year{font-family:var(--mono); font-size:12px; color:var(--brass); text-align:right; letter-spacing:.04em;}
+.slogan-rule{background:var(--line); height:100%; min-height:28px;}
+.slogan-text{font-family:var(--display); font-size:38px; font-weight:700; line-height:1.2; color:var(--ink);}
+.hero p.lede{font-size:18px; color:var(--ink-soft); max-width:52ch;}
 .hero-cta{margin-top:26px; display:flex; gap:14px; flex-wrap:wrap;}
 
 .doc-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:8px;}
@@ -111,7 +112,7 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
 
 .section-block{margin-bottom:44px;}
 .section-block h2{
-  font-family:var(--display); font-size:26px; font-weight:600; margin:0 0 14px;
+  font-family:var(--sans); font-size:22px; font-weight:600; margin:0 0 14px;
   display:flex; align-items:baseline; gap:10px;
 }
 .section-block h2 .num{font-family:var(--mono); font-size:13px; color:var(--brass); letter-spacing:.05em;}
@@ -250,7 +251,8 @@ main{max-width:1080px; margin:0 auto; padding:48px 28px 96px;}
 .site-footer p{font-family:var(--mono); font-size:11px; color:var(--ink-soft); line-height:1.7; max-width:75ch;}
 
 @media (max-width:600px){
-  .hero h1{font-size:28px;}
+  .slogan-text{font-size:26px;}
+  .slogan-rule{min-height:22px;}
   .doc-header h1{font-size:32px;}
 }
 
