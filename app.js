@@ -96,7 +96,7 @@ function renderHome(){
   <section class="hero">
     <div>
       <div class="hero-eyebrow">Three documents, three different jobs</div>
-      <h1>One announced independence.<br>One built the government.<br>One protects<br>you from it.</h1>
+      <h1>One announced independence.<br>One built the government.<br>One protects you from it.</h1>
       <p class="lede">A short, self-paced, interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights — built to fix the specific confusion most people have: which document does what.</p>
       <div class="hero-cta">
         <a class="btn" href="#/declaration">Start with the Declaration →</a>
@@ -161,10 +161,22 @@ function renderHome(){
   </section>
 
   <section class="section-block" style="margin-top:48px;">
-    <h2>Also worth a look</h2>
-    <p><a href="#/people">Key People →</a> — the handful of names behind all of this, and which side of the ratification debate they were on.</p>
-    <p><a href="#/sort">Sort It Out →</a> — a quick tap-to-match game mixing facts from all seven documents, to test whether you can actually tell them apart.</p>
-    <p><a href="#/today">Still in Force →</a> — which amendments are actually argued in court and the news today, and which are largely historical footnotes.</p>
+    <h2>Tools &amp; reference</h2>
+    <p style="margin-top:-6px; color:var(--ink-soft);">Not documents to study — but useful alongside them.</p>
+    <div class="quick-links">
+      <a class="quick-link-card" href="#/people">
+        <div class="ql-title">Key People</div>
+        <div class="ql-desc">The handful of names behind all of this, and which side of the ratification debate they were on.</div>
+      </a>
+      <a class="quick-link-card" href="#/sort">
+        <div class="ql-title">Sort It Out</div>
+        <div class="ql-desc">A tap-to-match game mixing facts from all seven documents — to test whether you can tell them apart.</div>
+      </a>
+      <a class="quick-link-card" href="#/today">
+        <div class="ql-title">Still in Force</div>
+        <div class="ql-desc">Which amendments are actually argued in court and the news today, and which are historical footnotes.</div>
+      </a>
+    </div>
   </section>
   `;
 }
