@@ -62,11 +62,14 @@ a:hover{text-decoration:underline;}
 }
 .wordmark:hover{text-decoration:none;}
 .primary-doc-nav{
-  display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; row-gap:2px;
+  display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; row-gap:0;
 }
 .primary-doc-nav a{
   font-family:var(--display); font-size:20px; font-weight:600; color:var(--navy);
-  padding:3px 0; border-bottom:1px solid transparent; transition:border-color .15s, color .15s;
+  padding:1px 0; border-bottom:1px solid transparent; transition:border-color .15s, color .15s;
+}
+@media (max-width:600px){
+  .primary-doc-nav a{font-size:17px; padding:0;}
 }
 .primary-doc-nav a:hover{color:var(--ink); text-decoration:none; border-color:var(--brass);}
 .primary-doc-nav a.active{color:var(--seal); border-color:var(--seal);}
