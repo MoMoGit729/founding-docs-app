@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", ()=>{ render(); initChat(); });
 
 function render(){
   const route = currentRoute();
-  document.querySelectorAll(".primary-nav a, .secondary-nav a").forEach(a=>{
+  document.querySelectorAll(".primary-doc-nav a, .secondary-nav a").forEach(a=>{
     a.classList.toggle("active", a.dataset.route === route);
   });
   const app = document.getElementById("app");
