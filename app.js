@@ -217,6 +217,7 @@ function renderSection(docKey, s, si){
         <div>
           <span class="label">${el.label}</span>
           <span class="desc">${el.desc}</span>
+          ${el.text ? `<blockquote class="reveal-text">${el.text}</blockquote>` : ''}
         </div>
       </div>
     `).join("") + `</div>`;
