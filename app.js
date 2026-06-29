@@ -113,7 +113,7 @@ function renderHome(){
         <span class="slogan-text">One protects you from it.</span>
       </div>
     </div>
-    <p class="lede">A short, self-paced, interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights — built to fix the specific confusion most people have: which document does what.</p>
+    <p class="lede">A short, self-paced, interactive study of the Declaration of Independence, the Constitution, and the Bill of Rights.</p>
     <div class="hero-cta">
       <a class="btn" href="#/declaration">Start with the Declaration →</a>
       <a class="btn ghost" href="#/dashboard">View your record</a>
