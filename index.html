@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founding Documents — A Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="seal-overlay" id="sealOverlay">
+  <div class="seal-stamp" id="sealStamp">
+    <svg viewBox="0 0 200 200" width="200" height="200">
+      <circle cx="100" cy="100" r="92" class="seal-ring-outer"/>
+      <circle cx="100" cy="100" r="78" class="seal-ring-inner"/>
+      <text x="100" y="60" text-anchor="middle" class="seal-text-top">RATIFIED</text>
+      <text x="100" y="148" text-anchor="middle" class="seal-text-bottom" id="sealDocName">DOCUMENT</text>
+      <text x="100" y="112" text-anchor="middle" class="seal-text-year">★</text>
+    </svg>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="#/" class="wordmark">
+      <span class="wordmark-eyebrow">A Study of the</span>
+      <span class="wordmark-main">Founding Documents</span>
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#/declaration" data-route="declaration">Declaration</a>
+      <a href="#/constitution" data-route="constitution">Constitution</a>
+      <a href="#/billofrights" data-route="billofrights">Bill of Rights</a>
+    </nav>
+  </div>
+  <div class="masthead-inner secondary-row">
+    <nav class="secondary-nav" id="secondaryNav">
+      <a href="#/federalist" data-route="federalist">Federalist</a>
+      <a href="#/antifederalist" data-route="antifederalist">Anti-Federalist</a>
+      <a href="#/articles" data-route="articles">Articles</a>
+      <a href="#/northwestordinance" data-route="northwestordinance">Northwest Ordinance</a>
+      <a href="#/people" data-route="people">Key People</a>
+      <a href="#/today" data-route="today">Still in Force</a>
+      <a href="#/sort" data-route="sort">Sort It Out</a>
+      <a href="#/dashboard" data-route="dashboard" class="nav-progress">Your Record</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="site-footer">
+  <p>Texts of the Declaration of Independence, the Constitution, and the Bill of Rights are drawn from the official U.S. National Archives transcriptions — public domain works of the U.S. government. Your progress is stored only in this browser, on your device.</p>
+</footer>
+
+<button id="tutorToggle" class="tutor-toggle" aria-label="Ask the tutor">
+  <span class="tutor-toggle-icon">✦</span>
+  <span class="tutor-toggle-label">Ask the Tutor</span>
+</button>
+
+<div id="tutorPanel" class="tutor-panel">
+  <div class="tutor-panel-header">
+    <span>Your Tutor</span>
+    <button id="tutorClose" aria-label="Close">×</button>
+  </div>
+  <div id="tutorLog" class="tutor-log"></div>
+  <form id="tutorForm" class="tutor-form">
+    <input id="tutorInput" type="text" placeholder="Ask about any of the three documents…" autocomplete="off">
+    <button type="submit" class="btn" style="padding:11px 16px;">Send</button>
+  </form>
+</div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
